@@ -1,0 +1,21 @@
+# This file lists the required packages for the project.
+# These versions are chosen for compatibility with Python 3.9 and each other,
+# and to resolve known bugs from older library versions.
+
+# Database driver - version locked as per requirement.
+pymongo[srv]==4.7
+
+# Yahoo Finance API - version >= 0.2.30 is needed for the 'no_cache' argument.
+yfinance==0.2.40
+
+# Data analysis library - version >= 2.0 is recommended to avoid index bugs.
+pandas==2.2.2
+
+# Numerical library - a version compatible with pandas 2.2.
+numpy==1.26.4
+
+# Kafka client - recent stable version.
+confluent-kafka==2.4.0
+
+# Timezone library - required by yfinance.
+pytz==2024.1
